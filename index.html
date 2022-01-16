@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="hi_name" onclick="select(this)">
+    <input id="name" placeholder="Как тебя зовут?">
+    <button id="btn_hello">Нажми меня</button>
+    <div id="result"></div>
+  </div>
+
+  <div class="calc" onclick="select(this)">
+    <input id="num1" />
+    <input id="num2" />
+	<div id="operator_btns">
+    <button onclick="calcSum()">+</button>
+    <button onclick="calcMin()">&#8722;</button>
+    <button onclick="calcMulti()">&#215;</button>
+    <button onclick="calcDiv()">&#x00F7;</button>
+	</div>
+  <div>Результат:<span id="result_calc"></span></div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="gallery" onclick="select(this)">
+    <ul id="slides">
+      <li class="slide showing"></li>
+      <li class="slide"></li>
+    </ul>
+    <div class="buttons">
+      <button class="controls" id="previous">&lt;</button>
+      <button class="controls" id="next">&gt;</button>
+    </div>
+  </div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
